@@ -1,9 +1,11 @@
+import Weather from "./Weather"
 import './App.css';
 
 export default function App() {
   return (
-    <div className="App">
-      <h1>hello</h1>
+    <div className="App"><div className="container">
+
+    <Weather/>
       <footer>
         <p>
           Coded with love by{" "}
@@ -27,7 +29,7 @@ export default function App() {
             GitHub
           </a>
         </p>
-      </footer>
+      </footer></div>
     </div>
   );
 }
