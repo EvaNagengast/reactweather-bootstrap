@@ -1,15 +1,31 @@
-.App {
-  text-align: laft;
-
-
- 
-
- 
-
+:root {
+  ---dark-text: #264145;
+  ---dark-base: #487f88;
+  ---mid-base: #6098a1;
+  ---light-base: #90bec5;
+  ---fancy-font: "Berkshire Swash", cursive;
+  ---curly-font: "Cedarville Cursive", cursive;
+  ---basic-font: 'Raleway', sans-serif;
 }
-.App h1 {
-  font-weight: 100;
-  color: rgb(255, 255, 255);
-    text-shadow: 0 0  10px  #fb00ff;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+
+.App {
+  text-align: left;
+  max-width: 60%;
+  margin: 20px auto;
+}
+
+.App .footer {
+  margin: 5px;
+  text-align: center;
+  font-size: 10px;
+  font-family: var(---base-font);
+  color: var(---dark-text);
+}
+.App .footer a {
+  text-decoration: none;
+  color: var(---dark-base);
+  font-family: var( ---curly-font);
+}
+.App .footer a:hover {
+  color: var(---mid-base);
 }

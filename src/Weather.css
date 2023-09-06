@@ -1,1 +1,42 @@
- .Weather { color: green}
+.Weather {
+height: 400px;
+  padding: 15px;
+  background-image: url("./media/borderimg.png");
+  background-size: 100% 100%;
+
+
+}
+
+.Weather h1 {
+  font-weight: 900;
+  color: var(---mid-base);
+  text-shadow: 1px 1px 10px var(---light-base);
+  font-family: var(---fancy-font);
+}
+.Weather ul {
+  padding: 0;
+}
+.Weather li {
+  font-weight: 100;
+  color: var(---dark-text);
+  list-style: none;
+}
+.Weather .searchinput {
+  color: var(---dark-text);
+  background-color: #487f88;
+  border: solid var(---light-base);
+  border-radius: 4px;
+}
+.Weather .searchinput::placeholder {
+  font-weight: bold;
+  opacity: 0.5;
+  color: var(---dark-text);
+  font-family: var(---curly-font);
+}
+
+.Weather .searchbutton {
+  color: var(---light-base);
+  background-color: #487f88;
+  border: 2px solid var(---light-base);
+  border-radius: 4px;
+}

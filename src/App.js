@@ -6,7 +6,7 @@ export default function App() {
     <div className="App"><div className="container">
 
     <Weather/>
-      <footer>
+      <footer className="footer">
         <p>
           Coded with love by{" "}
           <a
