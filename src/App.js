@@ -5,7 +5,7 @@ export default function App() {
   return (
     <div className="App mx-auto my-5"><div className="container">
 
-    <Weather/>
+    <Weather cityName="Sydney"/>
       <footer className="footer m-2">
         <p>
           Coded with love by{" "}

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import Dateinfo from "./Dateinfo";
 import axios from "axios";
 import "./Weather.css";
 
-export default function Weather() {
+export default function Weather(props) {
   const [apiReady, setApiReady] = useState(false);
 
   const [weatherinfo, setWeatherinfo] = useState(null);
@@ -11,8 +12,7 @@ export default function Weather() {
     setApiReady(true);
 
     setWeatherinfo({
-      name: "London",
-      date: 11,
+      name: response.data.city,
       condition: response.data.condition.description,
       temp: Math.round(response.data.temperature.current),
       humidity: response.data.temperature.humidity,
@@ -45,7 +45,9 @@ export default function Weather() {
         </form>
 
         <ul className="dayInfo p-0">
-          <li>{weatherinfo.date}</li>
+          <li>
+            <Dateinfo />
+          </li>
           <li className="weatherCondition text-capitalize">
             {weatherinfo.condition}
           </li>
@@ -74,7 +76,7 @@ export default function Weather() {
       </div>
     );
   } else {
-    let city = "London";
+    let city = props.cityName;
     const apiKey = "5101b1tb3fba4e5cedfo0b346a6ccc32";
     // `4cc095d48157ba3cc2e7da6b0b98bc8a`;
     const units = "metric";
