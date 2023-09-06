@@ -14,7 +14,6 @@
 
 .Weather li {
   font-weight: 100;
-  color: var(---text-base);
   list-style: none;
 }
 .Weather img {
@@ -23,11 +22,11 @@
 .Weather .searchinput {
   color: var(---text-dark);
   background-color: var(---mid-color);
- border: 3px solid #1a313e20;
+  border: 3px solid #1a313e20;
   border-radius: 4px;
 }
 .Weather .searchinput::placeholder {
-font-size: 14px;
+  font-size: 14px;
   opacity: 0.5;
   color: var(---text-dark);
   font-family: var(---fancy-font);
@@ -38,5 +37,11 @@ font-size: 14px;
   background-color: #0000000b;
   border: solid #1a313e3f;
   border-radius: 4px;
+  font-family: var(---fancy-font);
+}
+
+.loading {
+  font-size: 100px;
+
   font-family: var(---fancy-font);
 }
