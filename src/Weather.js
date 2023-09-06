@@ -3,7 +3,7 @@ import "./Weather.css";
 
 export default function Weather() {
   return (
-    <div className="Weather">
+    <div className="Weather p-5">
       <form>
         <div className="row">
           <div className="col-6">
@@ -24,7 +24,7 @@ export default function Weather() {
         </div>
       </form>
 
-      <ul>
+      <ul className="dayInfo p-0">
         <li>Monday, 5.9., 19:00</li>
         <li>Mostly cloudy</li>
       </ul>

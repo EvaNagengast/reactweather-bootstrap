@@ -3,10 +3,10 @@ import './App.css';
 
 export default function App() {
   return (
-    <div className="App"><div className="container">
+    <div className="App mx-auto my-5"><div className="container">
 
     <Weather/>
-      <footer className="footer">
+      <footer className="footer m-2">
         <p>
           Coded with love by{" "}
           <a

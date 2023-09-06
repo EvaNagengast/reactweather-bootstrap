@@ -1,6 +1,6 @@
 .Weather {
   height: 400px;
-  padding: 50px;
+
   background-image: url("./media/borderimg.png");
   background-size: 100% 100%;
 }
@@ -11,9 +11,7 @@
   text-shadow: 1px 1px 14px var(---text-base);
   font-family: var(---fancy-font);
 }
-.Weather ul {
-  padding: 0;
-}
+
 .Weather li {
   font-weight: 100;
   color: var(---text-base);

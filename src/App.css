@@ -12,13 +12,11 @@
 .App {
   text-align: left;
   max-width: 60%;
-  margin: 20px auto;
-   background-color: var(---dark-color);
+  background-color: var(---dark-color);
   background-size: 100% 100%;
 }
 
 .App .footer {
-  margin: 5px;
   text-align: center;
   font-size: 10px;
   font-family: var(---base-font);
