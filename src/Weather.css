@@ -1,16 +1,14 @@
 .Weather {
-height: 400px;
-  padding: 15px;
+  height: 400px;
+  padding: 50px;
   background-image: url("./media/borderimg.png");
   background-size: 100% 100%;
-
-
 }
 
 .Weather h1 {
   font-weight: 900;
-  color: var(---mid-base);
-  text-shadow: 1px 1px 10px var(---light-base);
+  color: var(---text-dark);
+  text-shadow: 1px 1px 14px var(---text-base);
   font-family: var(---fancy-font);
 }
 .Weather ul {
@@ -18,25 +16,29 @@ height: 400px;
 }
 .Weather li {
   font-weight: 100;
-  color: var(---dark-text);
+  color: var(---text-base);
   list-style: none;
 }
+.Weather img {
+  height: 160px;
+}
 .Weather .searchinput {
-  color: var(---dark-text);
-  background-color: #487f88;
-  border: solid var(---light-base);
+  color: var(---text-dark);
+  background-color: var(---mid-color);
+ border: 3px solid #1a313e20;
   border-radius: 4px;
 }
 .Weather .searchinput::placeholder {
-  font-weight: bold;
+font-size: 14px;
   opacity: 0.5;
-  color: var(---dark-text);
-  font-family: var(---curly-font);
+  color: var(---text-dark);
+  font-family: var(---fancy-font);
 }
 
 .Weather .searchbutton {
-  color: var(---light-base);
-  background-color: #487f88;
-  border: 2px solid var(---light-base);
+  color: var(---text-dark);
+  background-color: #0000000b;
+  border: solid #1a313e3f;
   border-radius: 4px;
+  font-family: var(---fancy-font);
 }

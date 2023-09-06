@@ -32,12 +32,12 @@ export default function Weather() {
         <div className="col-6">
           <div className="row">
             <div className="col-6">
-
-<img src="./media/sun.png" alt="sun"></img>
-
+              <img
+                src="https://transcendent-dodol-313db9.netlify.app/media/imageshelp/chariot.png"
+                alt="sun"
+              ></img>
             </div>
-              <div className="col-6">
-            </div>
+            <div className="col-6"></div>
           </div>
         </div>
         <div className="col-6">

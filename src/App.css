@@ -1,17 +1,20 @@
 :root {
-  ---dark-text: #264145;
-  ---dark-base: #487f88;
-  ---mid-base: #6098a1;
-  ---light-base: #90bec5;
+  ---text-base: #eabe4d;
+  ---text-dark: #a86637;
+  ---dark-color: #09141a;
+  ---mid-color: #152832;
+
   ---fancy-font: "Berkshire Swash", cursive;
   ---curly-font: "Cedarville Cursive", cursive;
-  ---basic-font: 'Raleway', sans-serif;
+  ---basic-font: "Raleway", sans-serif;
 }
 
 .App {
   text-align: left;
   max-width: 60%;
   margin: 20px auto;
+   background-color: var(---dark-color);
+  background-size: 100% 100%;
 }
 
 .App .footer {
@@ -19,13 +22,13 @@
   text-align: center;
   font-size: 10px;
   font-family: var(---base-font);
-  color: var(---dark-text);
+  color: var(---text-base);
 }
 .App .footer a {
   text-decoration: none;
-  color: var(---dark-base);
-  font-family: var( ---curly-font);
+  color: var(---text-dark);
+  font-family: var(---fancy-font);
 }
 .App .footer a:hover {
-  color: var(---mid-base);
+  color: var(---mid-color);
 }
