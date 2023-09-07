@@ -21,7 +21,7 @@
 }
 .Weather .searchinput {
   color: var(---text-dark);
-  background-color: var(---mid-color);
+  background-color: #091820dd;
   border: 3px solid #1a313e20;
   border-radius: 4px;
 }
