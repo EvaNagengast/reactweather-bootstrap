@@ -1,0 +1,15 @@
+.Conversion{line-height: 50px;}
+
+
+.unit {
+  float: right;
+}
+
+.unit a {
+  text-decoration: none;
+  color: var(---text-dark);
+}
+.temperatureDisplay {
+  font-size: 70px;
+  font-family: var(---fancy-font);
+}

@@ -20,6 +20,7 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       feels: response.data.temperature.feels_like,
       timestamp: response.data.time,
+      icon: response.data.condition.icon,
     });
   }
   function handleSubmit(event) {
