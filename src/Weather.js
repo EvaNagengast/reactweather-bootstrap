@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import Dateinfo from "./Dateinfo";
 import axios from "axios";
+
+import Weatherinfo from "./Weatherinfo";
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -44,35 +45,7 @@ export default function Weather(props) {
           </div>
         </form>
 
-        <ul className="dayInfo p-0">
-          <li>
-            <Dateinfo time={weatherinfo.timestamp} />
-          </li>
-          <li className="weatherCondition text-capitalize">
-            {weatherinfo.condition}
-          </li>
-        </ul>
-        <div className="row">
-          <div className="col-7">
-            <div className="row tempDisplay">
-              <div className="col-8">
-                <img
-                  src="https://transcendent-dodol-313db9.netlify.app/media/imageshelp/chariot.png"
-                  alt="sun"
-                ></img>
-              </div>
-              <div className="col-4">{weatherinfo.temp}°C</div>
-            </div>
-          </div>
-          <div className="col-5">
-            <ul>
-              {" "}
-              <li>feels like:{weatherinfo.feels}</li>
-              <li>humidity:{weatherinfo.humidity}</li>
-              <li>windspeed:{weatherinfo.wind}</li>
-            </ul>
-          </div>
-        </div>
+        <Weatherinfo info={weatherinfo} />
       </div>
     );
   } else {
