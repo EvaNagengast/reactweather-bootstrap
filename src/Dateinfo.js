@@ -1,12 +1,6 @@
 import React from "react";
 
-export default function Dateinfo() {
-  let currentDate = new Date();
-  let todayweekday = currentDate.getDay();
-  let todaydate = currentDate.getDate();
-  let todaymonth = currentDate.getMonth();
-  let todayyear = currentDate.getFullYear();
-  let todayshort = todayyear - 2000;
+export default function Dateinfo(props) {
   const dayname = [
     "Sunday",
     "Monday",
@@ -30,13 +24,25 @@ export default function Dateinfo() {
     "November",
     "December",
   ];
-  let displayday = dayname[todayweekday];
-  let displaymonth = monthname[todaymonth];
+
+
+
+
+  let currentTime = new Date(props.time * 1000);
+let currentWeekday = dayname[currentTime.getDay()];
+let currentDateDay = currentTime.getDate();
+let currentDateMonth = monthname[currentTime.getMonth()];
+let currentDateYear = currentTime.getFullYear()-2000;
+
+
+
   return (
     <div>
       <p>
-        {displayday}, {todaydate}.{displaymonth}, `{todayshort}
+        {currentWeekday}, {currentDateDay}.{currentDateMonth}, `
+        {currentDateYear}
       </p>
     </div>
   );
 }
+

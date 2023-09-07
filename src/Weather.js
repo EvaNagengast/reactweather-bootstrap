@@ -5,7 +5,6 @@ import "./Weather.css";
 
 export default function Weather(props) {
   const [apiReady, setApiReady] = useState(false);
-
   const [weatherinfo, setWeatherinfo] = useState(null);
 
   function handleResponse(response) {
@@ -18,6 +17,7 @@ export default function Weather(props) {
       humidity: response.data.temperature.humidity,
       wind: response.data.wind.speed,
       feels: response.data.temperature.feels_like,
+      timestamp: response.data.time,
     });
   }
 
@@ -46,7 +46,7 @@ export default function Weather(props) {
 
         <ul className="dayInfo p-0">
           <li>
-            <Dateinfo />
+            <Dateinfo time={weatherinfo.timestamp} />
           </li>
           <li className="weatherCondition text-capitalize">
             {weatherinfo.condition}
