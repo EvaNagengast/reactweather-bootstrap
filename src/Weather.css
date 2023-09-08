@@ -1,6 +1,6 @@
 .Weather {
   height: 400px;
-
+  background-color: var(---dark-color);
   background-image: url("./media/borderimg.png");
   background-size: 100% 100%;
 }

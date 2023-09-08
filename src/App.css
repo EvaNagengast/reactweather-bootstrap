@@ -12,8 +12,8 @@
 .App {
   text-align: left;
   max-width: 60%;
-  background-color: var(---dark-color);
-  background-size: 100% 100%;
+
+
   color: var(---text-base)
 }
 
@@ -30,4 +30,5 @@
 }
 .App .footer a:hover {
   color: var(---mid-color);
+  ;
 }
