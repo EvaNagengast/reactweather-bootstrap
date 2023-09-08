@@ -34,10 +34,10 @@ export default function Weather(props) {
   }
 
   function search() {
-    const apiKey = "5101b1tb3fba4e5cedfo0b346a6ccc32";
+    let apiKey = "5101b1tb3fba4e5cedfo0b346a6ccc32";
     // `4cc095d48157ba3cc2e7da6b0b98bc8a`;
-    const units = "metric";
-    const apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=${units}`;
+    let units = "metric";
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=${units}`;
     //  `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${units}&appid=${apiKey}`;
 
     axios.get(apiUrl).then(handleResponse);
@@ -68,7 +68,7 @@ export default function Weather(props) {
         </form>
 
         <Weatherinfo info={weatherinfo} />
-        <Forecast info={weatherinfo.name} />
+        <Forecast info={weatherinfo} />
       </div>
     );
   } else {
