@@ -10,9 +10,10 @@ import fog from "./media/fog.png";
 import rain from "./media/rain.png";
 import snow from "./media/snow.png";
 import storm from "./media/storm.png";
+import "./Weathericon.css"
 
 export default function WeatherIcon(props) {
-  console.log(props.icon);
+
   const codeMapping = {
     "clear-sky-day": sun,
     "clear-sky-night": moon,
@@ -37,7 +38,7 @@ export default function WeatherIcon(props) {
   const weatherImage = codeMapping[props.icon];
 
   return (
-    <div>
+    <div className="Weathericon">
       <img src={weatherImage} alt="Weather Icon" />{" "}
     </div>
   );
