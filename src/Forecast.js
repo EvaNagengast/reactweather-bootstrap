@@ -6,13 +6,19 @@ import "./Forecast.css";
 export default function Forecast(props) {
   let [loaded, setLoaded] = useState(false);
   let [forecast, setForecast] = useState(null);
+
+
   useEffect(() => {
     setLoaded(false);
-  }, [props.info]);
+  }, [props.info.name]);
 
+
+
+  console.log(props.info);
   function handleResponse(response) {
     setForecast(response.data.daily);
     setLoaded(true);
+  
   }
 
   if (loaded) {
@@ -39,7 +45,7 @@ export default function Forecast(props) {
       </div>
     );
   } else {
-    let city = props.info;
+    let city = props.info.name;
     let apiKey = "5101b1tb3fba4e5cedfo0b346a6ccc32";
     let units = "metric";
     let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=${units}`;
