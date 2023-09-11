@@ -1,2 +1,6 @@
-.maximumTemperature{color: var(---text-base) ;}
-.minimumTemperature{color: var(---text-dark) ;}
+.maximumTemperature {
+  color: var(---text-base);
+}
+.minimumTemperature {
+  color: var(---text-dark);
+}

@@ -38,8 +38,8 @@ export default function WeatherIcon(props) {
   const weatherImage = codeMapping[props.icon];
 
   return (
-    <div className="Weathericon">
-      <img src={weatherImage} alt="Weather Icon" />{" "}
-    </div>
+
+      <img src={weatherImage} alt="Weather Icon" /> 
+  
   );
 }

@@ -7,18 +7,10 @@ import "./Weatherinfo.css";
 export default function Weatherinfo(props) {
   return (
     <div className="Weatherinfo">
-      <ul className="dayInfo p-0">
-        <li>
-          <Dateinfo time={props.info.timestamp} />
-        </li>
-        <li className="weatherCondition text-capitalize">
-          {props.info.condition}
-        </li>
-      </ul>
       <div className="row">
-        <div className="col-7">
-          <div className="row tempDisplay">
-            <div className="col-6">
+        <div className="col-sm-7">
+          <div className="row tempDisplay d-flex align-items-center ">
+            <div className="Weathericon col-6 text-center">
               <Weathericon icon={props.info.icon} alt={props.info.icon} />
             </div>
             <div className="col-6">
@@ -26,11 +18,16 @@ export default function Weatherinfo(props) {
             </div>
           </div>
         </div>
-        <div className="col-5">
-          <ul>
-            <li>feels like:{props.info.feels}</li>
-            <li>humidity:{props.info.humidity}</li>
-            <li>windspeed:{props.info.wind}</li>
+        <div className="col-sm-5 text-center text-sm-left">
+          <ul className="dayInfo pt-4">
+            <Dateinfo time={props.info.timestamp} />
+
+            <li className="weatherCondition text-capitalize">
+              {props.info.condition}
+            </li>
+
+            <li>Humidity: {props.info.humidity} %</li>
+            <li>Windspeed: {props.info.wind} mph</li>
           </ul>
         </div>
       </div>

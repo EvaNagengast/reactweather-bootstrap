@@ -1,11 +1,10 @@
-import Weather from "./Weather"
-import './App.css';
+import Weather from "./Weather";
+import "./App.css";
 
 export default function App() {
   return (
-    <div className="App mx-auto my-5 pt-3 "><div className="container">
-
-    <Weather />
+    <div className="App mx-auto my-1 my-sm-3 my-md-4 my-lg-5 container pt-3 ">
+      <Weather />
       <footer className="footer m-2">
         <p>
           Coded with love by{" "}
@@ -17,7 +16,7 @@ export default function App() {
             rel="noreferrer"
           >
             Eva Nagengast
-          </a>{" "}
+          </a>{"  "}
           | This project is open sourced on{" "}
           <a
             href="https://github.com/EvaNagengast/reactweather-bootstrap"
@@ -29,9 +28,7 @@ export default function App() {
             GitHub
           </a>
         </p>
-      </footer></div>
+      </footer>
     </div>
   );
 }
-
-

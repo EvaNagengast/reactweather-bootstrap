@@ -17,8 +17,8 @@ export default function TempConversion(props) {
 
   if (unit === "celsius") {
     return (
-      <div className="Conversion">
-        <span className="temperatureDisplay me-1">
+      <div className="Conversion text-start d-flex">
+        <span className="temperatureDisplay me-1 ">
           {props.celsiustemperature}
         </span>
 

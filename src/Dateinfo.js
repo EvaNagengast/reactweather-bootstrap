@@ -11,38 +11,29 @@ export default function Dateinfo(props) {
     "Saturday",
   ];
   const monthname = [
-    "January",
-    "February",
-    "March",
-    "April",
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
     "May",
     "June",
     "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
+    "Aug",
+    "Sept",
+    "Oct",
+    "Nov",
+    "Dec",
   ];
 
-
-
-
   let currentTime = new Date(props.time * 1000);
-let currentWeekday = dayname[currentTime.getDay()];
-let currentDateDay = currentTime.getDate();
-let currentDateMonth = monthname[currentTime.getMonth()];
-let currentDateYear = currentTime.getFullYear()-2000;
-
-
+  let currentWeekday = dayname[currentTime.getDay()];
+  let currentDateDay = currentTime.getDate();
+  let currentDateMonth = monthname[currentTime.getMonth()];
+  let currentDateYear = currentTime.getFullYear() - 2000;
 
   return (
-    <div>
-      <p>
-        {currentWeekday}, {currentDateDay}.{currentDateMonth}, `
-        {currentDateYear}
-      </p>
-    </div>
+    <li>
+      {currentWeekday}, {currentDateDay}. {currentDateMonth}, `{currentDateYear}
+    </li>
   );
 }
-

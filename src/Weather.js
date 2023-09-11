@@ -5,7 +5,7 @@ import Weatherinfo from "./Weatherinfo";
 import Forecast from "./Forecast";
 import "./Weather.css";
 
-export default function Weather(props) {
+export default function Weather() {
   const [apiReady, setApiReady] = useState(false);
   const [weatherinfo, setWeatherinfo] = useState(null);
   const [city, setCity] = useState("London");
@@ -45,14 +45,14 @@ export default function Weather(props) {
 
   if (apiReady) {
     return (
-      <div className="Weather p-5">
+      <div className="Weather p-1 p-sm-2 p-md-3 px-lg-5 py-lg-4">
         <form onSubmit={handleSubmit}>
-          <div className="row">
-            <div className="col-6">
+          <div className="row pt-1  ">
+            <div className="col-12 col-md-5 order-2 order-md-1">
               {" "}
               <h1>{weatherinfo.name}</h1>
             </div>
-            <div className="col-4">
+            <div className="col-8 col-md-5 order-1 order-md-2">
               <input
                 type="text"
                 placeholder="Enter a city"
@@ -61,13 +61,17 @@ export default function Weather(props) {
                 onChange={handleCityInput}
               ></input>
             </div>
-            <div className="col-2">
+            <div className="col-4 col-md-2 order-1 order-md-2">
               <input type="submit" className="searchbutton"></input>
             </div>
           </div>
         </form>
 
         <Weatherinfo info={weatherinfo} />
+        <div className="forecastHeader mt-4">
+          <hr className="mb-2 mt-4" />
+          <h2>Forecast</h2>
+        </div>
         <Forecast info={weatherinfo} />
       </div>
     );

@@ -1,20 +1,20 @@
 :root {
-  ---text-base: #eabe4d;
+  ---text-base: #f8c06d;
   ---text-dark: #a86637;
   ---dark-color: #0b1a22;
   ---mid-color: #152832;
-
   ---fancy-font: "Berkshire Swash", cursive;
-  ---curly-font: "Cedarville Cursive", cursive;
   ---basic-font: "Raleway", sans-serif;
 }
 
 .App {
   text-align: left;
   max-width: 70%;
-
-
-  color: var(---text-base)
+  color: var(---text-base);
+}
+.App .forecastHeader {
+  text-align: center;
+  font-family: var(---fancy-font);
 }
 
 .App .footer {
@@ -30,5 +30,14 @@
 }
 .App .footer a:hover {
   color: var(---mid-color);
-  ;
+}
+@media (max-width: 1024px) {
+  .App {
+    max-width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .App {
+    max-width: 90%;
+  }
 }
