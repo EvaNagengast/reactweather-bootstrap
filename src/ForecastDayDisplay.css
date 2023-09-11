@@ -1,6 +1,4 @@
-.maximumTemperature {
-  color: var(---text-base);
-}
-.minimumTemperature {
+
+.ForecastDayDisplay .minimumTemperature {
   color: var(---text-dark);
 }

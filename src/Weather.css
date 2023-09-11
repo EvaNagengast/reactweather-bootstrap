@@ -11,10 +11,7 @@
   font-family: var(---fancy-font);
 }
 
-.Weather li {
-  list-style: none;
-  font-size: 17px;
-}
+
 
 .Weather .searchinput {
   color: var(---text-dark);
@@ -42,38 +39,22 @@
   font-family: var(---fancy-font);
 }
 
-
-@media (max-width: 1024px) {
-  .Weather li {
-
-  font-size: 16px;
-}
-}
-
-
 @media (max-width: 768px) {
- .Weather h1 {
-  font-size: 80px;
-  text-shadow: 1px 1px 10px var(---text-base);
+  .Weather h1 {
+    font-size: 80px;
+    text-shadow: 1px 1px 10px var(---text-base);
+  }
+  .loading {
+    font-size: 60px;
+  }
 }
-.loading {
-  font-size: 60px;
-
-}
-.Weather li {
-
-  font-size: 14px;
-}
-}
-
 
 @media (max-width: 482px) {
- .Weather h1 {
-  font-size: 65px;
-  text-shadow: 1px 1px 8px var(---text-base);
-}
-.loading {
-  font-size: 60px;
-
-}
+  .Weather h1 {
+    font-size: 65px;
+    text-shadow: 1px 1px 8px var(---text-base);
+  }
+  .loading {
+    font-size: 60px;
+  }
 }

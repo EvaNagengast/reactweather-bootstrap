@@ -41,12 +41,12 @@ export default function ForecastDayDisplay(props) {
 
   return (
     <div className="ForecastDayDisplay">
-      <div className="forecastWeekday">{forecastWeekday}</div>
-      <div className="forecastTemperature">
-        <span className="maximumTemperature">{maxiTemp}°</span>
+      <div>{forecastWeekday}</div>
+      <div >
+        <span >{maxiTemp}°</span>
         <span className="minimumTemperature">{miniTemp}°</span>
       </div>
-      <div className="forecastIcon">
+      <div>
         <img src={iconpath} alt="forecast icon" />
       </div>
     </div>

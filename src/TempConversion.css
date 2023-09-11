@@ -1,16 +1,18 @@
 .Conversion {
-  line-height: 50px;
+  line-height: 0;
 }
 
-.unit {
-  float: right;
-}
-
-.unit a {
+.Conversion .unit a {
   text-decoration: none;
   color: var(---text-dark);
 }
-.temperatureDisplay {
-  font-size: 70px;
+.Conversion .temperatureDisplay {
+  font-size: 99px;
   font-family: var(---fancy-font);
+}
+
+@media (max-width: 400px) {
+  .Conversion .temperatureDisplay {
+    font-size: 80px;
+  }
 }

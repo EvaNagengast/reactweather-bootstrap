@@ -18,7 +18,7 @@ export default function TempConversion(props) {
   if (unit === "celsius") {
     return (
       <div className="Conversion text-start d-flex">
-        <span className="temperatureDisplay me-1 ">
+        <span className="temperatureDisplay m-1 ">
           {props.celsiustemperature}
         </span>
 
@@ -32,8 +32,8 @@ export default function TempConversion(props) {
     );
   } else {
     return (
-      <div className="Conversion">
-        <span className="temperatureDisplay me-1">
+      <div className="Conversion text-start d-flex">
+        <span className="temperatureDisplay m-1 ">
           {Math.round((props.celsiustemperature * 9) / 5 + 32)}
         </span>
 

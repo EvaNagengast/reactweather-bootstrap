@@ -35,10 +35,10 @@ export default function Forecast(props) {
           <div className="col">
             <ForecastDayDisplay info={forecast[3]} />
           </div> 
-          <div className="col">
+          <div className="col d-none-on-xs">
             <ForecastDayDisplay info={forecast[4]} />
           </div> 
-          <div className="col">
+          <div className="col d-none d-sm-block">
             <ForecastDayDisplay info={forecast[5]} />
           </div>
         </div>

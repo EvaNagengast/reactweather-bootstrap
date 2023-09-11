@@ -17,7 +17,7 @@ export default function App() {
           >
             Eva Nagengast
           </a>{"  "}
-          | This project is open sourced on{" "}
+          <span className="d-none d-sm-inline-block">|</span> <br className="d-sm-none"/> This project is open sourced on{" "}
           <a
             href="https://github.com/EvaNagengast/reactweather-bootstrap"
             className="gitHub"

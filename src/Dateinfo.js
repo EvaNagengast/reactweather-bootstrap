@@ -32,7 +32,7 @@ export default function Dateinfo(props) {
   let currentDateYear = currentTime.getFullYear() - 2000;
 
   return (
-    <li>
+    <li classNam="Dateinfo">
       {currentWeekday}, {currentDateDay}. {currentDateMonth}, `{currentDateYear}
     </li>
   );
